@@ -6,7 +6,7 @@ def main():
     library = Library()
     while True:
         print(
-            f"===== LIBRARY MENU =====\n1. Add Book\n2. Register Member\n3. Issue Book\n4. Return Book\n5. Show All Books\n6. Show Available Books\n7. Show Members\n8. Exit"
+            f"===== LIBRARY MENU =====\n1. Add Book\n2. Register Member\n3. Issue Book\n4. Return Book\n5. Show All Books\n6. Show Available Books\n7. Show Members\n8. Show Borrowed Books\n9. Exit"
         )
         option = str(input("Select option: "))
         if option == "1":
@@ -24,6 +24,8 @@ def main():
         elif option == "7":
             library.show_members()
         elif option == "8":
+            library.show_borrowed_books()
+        elif option == "9":
             print("Exit")
             break
         else:

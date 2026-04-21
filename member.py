@@ -1,6 +1,3 @@
-import random
-
-
 def generate_member_id(first_name, last_name):
     return first_name[:2].upper() + last_name[:2].upper()
 
